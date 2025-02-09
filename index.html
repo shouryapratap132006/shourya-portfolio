@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shourya's_Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(21, 0, 55);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(37, 2, 60);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(157, 157, 246);
+            font-size: 1.06rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(187, 123, 248);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .first>div {
+            width: 35%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 50px 0;
+        }
+
+        .rightsection img {
+            width: 90%;
+            border-radius: 30%;
+            border: 2px solid white;
+        }
+
+        .leftsection span {
+            color: rgb(251, 247, 1);
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .second h1 {
+            font-size: 1.9rem;
+            margin: 40px;
+            align-items: center;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(63, 21, 122);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+       
+
+        .about-content {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .about-content h2 {
+            color: #f9f7f7;
+            margin-bottom: 10px;
+        }
+
+        .about-content p {
+            color: #e1c6c6;
+            line-height: 1.6;
+        }
+
+        .work-experience {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(63, 21, 122);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item {
+            display: flex;
+            align-items: center;
+            background: rgb(21, 0, 55);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .experience-item p {
+            margin: 5px 0;
+        }
+
+        .experience-item strong {
+            color: #ffff00;
+        }
+
+        .imagejob {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        .writebox {
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .education {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(63, 21, 122);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .education h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .education table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .education th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .education th {
+            background-color: #340b9b;
+            color: white;
+        }
+
+        .education td {
+            background-color: rgb(21, 0, 55);
+        }
+
+        .institute-logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+            
+        }
+
+        .education span {
+            vertical-align: middle;
+            
+        }
+
+        .skills-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgb(63, 21, 122);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #fefefe;
+        }
+
+        .skill {
+            margin: 15px 0;
+        }
+
+        .skill h3 {
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .skill-bar {
+            background-color: #4d1f96;
+            border-radius: 25px;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .skill-fill {
+            background-color: #24054f;
+            height: 100%;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            border-radius: 25px 0 0 25px;
+            transition: width 0.5s ease;
+            
+        }
+
+        @media (max-width: 600px) {
+            .skills-container {
+                padding: 15px;
+            }
+
+            .skills-container h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        .certificates-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .certificate {
+            background: rgb(19, 3, 121);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+            
+
+        .certificate img {
+            height: 100px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .certificate h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #faf9f9;
+            
+        }
+
+        .fourth h2 {
+            text-align: center;
+            color: #ffffff;
+            padding-bottom: 80px;
+            
+        }
+
+        .certificate a {
+            background-color: #c19aff;
+            padding: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .certificate p {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shourya Pratap</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection">Hello,My name is <span>Shourya Pratap</span>
+                <div>and I am an Enthusiast </div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightsection">
+                <img src="photo/1719446065701.jpeg"
+                    alt="my image">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="about-container">
+                
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>Hello, My name is Shourya Pratap. I am currently in my first year of Bachelors in Technology in CS & AI from Newton School of Technology × Rishihood University.
+                        I am also a learner in CS50 by Harvard University. I am a State Level Champion in a coding hackathon organised by Sikh Regiment of India.</p>
+                    <p>In my free time, I enjoy singing and coding. I'm always looking to learn new things and
+                        improve my skills.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="second">
+            <h1>Work Experience</h1>
+            <div class="work-experience">
+                <div class="experience-item">
+                    <div class="imagejob">
+                        <img src="photo/hacktoberfest_logo.jpeg"
+                            alt="hacktober">
+                    </div>
+                    <div class="writebox">
+                        <h3>Open Source Developer</h3>
+                        <p>Hacktoberfest | Remote</p>
+                        <p><strong>Dates:</strong> October 2024 - Present</p>
+                        <p>A month-long celebration of open-source projects, their maintainers, and the entire community
+                            of contributors..</p>
+                    </div>
+
+                </div>
+                <div class="experience-item">
+                    <div class="imagejob">
+                        <img src="photo/girlscriptsoc_logo.jpeg"
+                            alt="girlscript summer of code">
+                    </div>
+                    <div class="writebox">
+                        <h3>Open Source Developer</h3>
+                        <p>GirlScript Summer of Code | Remote</p>
+                        <p><strong>Dates:</strong> October 2024 - Present</p>
+                        <p>GSSoC is a 3-month long #OpenSource program by GirlScript Foundation, India.</p>
+                    </div>
+
+                </div>
+
+                <!-- Add more experience items as needed -->
+            </div>
+
+        </section>
+        <hr>
+        <section class="third">
+            <div class="education">
+                <h2>Education</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Institute</th>
+                            <th>Dates</th>
+                            <th>Percentage</th>
+                            <th>Course</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="photo/newton.jpeg"
+                                    alt="Institute 1 Logo" class="institute-logo">
+                                <span>Newton School of Technology </span>
+                            </td>
+                            <td>August 2024 - Present</td>
+                            <td>N.A.</td>
+                            <td>B.Tech,CS and AI</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="photo/agrasen_dav_public_school_logo.jpeg"
+                                    alt="Institute 2 Logo" class="institute-logo">
+                                <span>Agrasen DAV Public School</span>
+                            </td>
+                            <td>April 2011 - June 2024</td>
+                            <td>92%</td>
+                            <td>Intermediate</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+        <hr>
+        <section>
+            <div class="skills-container">
+                <h2>My Skills</h2>
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Java Script</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 60%;">60%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Graphic Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>MySQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 60%;">60%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>C</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>C++</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 40%;">40%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="fourth">
+            <h2>Licences and Certifications</h2>
+            <div class="certificates-container">
+                <div class="certificate">
+                    <img src="photo/gdg.jpeg" alt="Certificate 1">
+                    <h3>CS 50 by Harvard University</h3>
+                    <p>A brief description of what this certificate is about.</p>
+                    <a href="certificate1.jpg" class="btn" target="_blank">View Certificate</a>
+                </div>
+                <div class="certificate">
+                    <img src="photo/Sikh_Regiment_Logo.png" alt="Certificate 2">
+                    <h3>State level champion (Junior Tech Fest)</h3>
+                    <p>A brief description of what this certificate is about.</p>
+                    <a href="certificate2.jpg" class="btn" target="_blank">View Certificate</a>
+                </div>
+
+            </div>
+
+        </section>
+        <hr>
+        <section>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Python programmer', 'Web Designer', 'Graphic Designer', 'Web Developer'],
+            typeSpeed: 80,
+        });
+    </script>
+
+</body>
+</html>
